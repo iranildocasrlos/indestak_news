@@ -32,13 +32,22 @@ class _HomeState extends State<Home> {
     // TODO: implement initState
     super.initState();
     categorias = getCategories();
+    getNews();
 
   }
 
   getNews() async{
     News newsRec = News();
-    await newsRec.getNews(localizacao);
+    await newsRec.getNews();
     articles = newsRec.news;
+
+    if(newsRec.news.isEmpty ){
+
+      newsRec = News(key: "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD");
+      await newsRec.getNews();
+      articles = newsRec.news;
+    }
+
     setState(() {
       _loading = false;
     });
@@ -53,7 +62,7 @@ class _HomeState extends State<Home> {
     String appLocale = Intl.getCurrentLocale().toString();
     print("Local do App: $appLocale");
     localizacao = appLocale;
-    getNews();
+
     return Scaffold(
       appBar: AppBar(
         title: Row(
