@@ -127,7 +127,7 @@ class BlogTile extends StatelessWidget {
         );
       },
       child: Container(
-        margin: EdgeInsets.only(bottom: 16),
+        margin: EdgeInsets.only(bottom: 16,left: 8,right: 8),
         child: Column(
           children: [
             ClipRRect(
