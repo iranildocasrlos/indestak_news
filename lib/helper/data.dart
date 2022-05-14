@@ -13,7 +13,7 @@ List<CategoryModel>getCategories(){
 
      //1
      CategoryModel categoryModel = new CategoryModel();
-     categoryModel.categoryName = "Bussines";
+     categoryModel.categoryName = "Business";
      categoryModel.urlImage = "https://images.unsplash.com/photo-1425421669292-0c3da3b8f529?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80";
      listCategory.add(categoryModel);
 
@@ -63,11 +63,22 @@ List<CategoryModel>getCategories(){
         // String apiKey = "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD";
         //   String apiKey = "https://newsapi.org/v2/top-headlines?country=br&apiKey=1bc7955b268d4676be11952421184021";
 
+        String apiKey ;
          if(key.contains("https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD")){
-              String apiKey = "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD";
+
+              if(key == null){
+                   apiKey = "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD";
+              }else{
+                   apiKey = key;
+              }
               return apiKey;
+
          }else{
-              String apiKey = "https://newsapi.org/v2/top-headlines?country=br&apiKey=1bc7955b268d4676be11952421184021";
+              if(key == null){
+                   apiKey = "https://newsapi.org/v2/top-headlines?country=br&apiKey=1bc7955b268d4676be11952421184021";
+              }else{
+                   apiKey = key;
+              }
               return apiKey;
          }
 

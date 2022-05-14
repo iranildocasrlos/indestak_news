@@ -8,16 +8,21 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    MaterialColor colorSeed = Colors.deepPurple;
+    ValueNotifier<bool>materialNofier = ValueNotifier(false);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Indestak News',
 
       theme: ThemeData(
-
-        primaryColor: Colors.white,
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: colorSeed)
       ),
       home: Home(),
     );

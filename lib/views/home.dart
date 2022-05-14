@@ -5,6 +5,7 @@ import 'package:indestak_news/helper/data.dart';
 import 'package:indestak_news/helper/news.dart';
 import 'package:indestak_news/models/articleModel.dart';
 import 'package:indestak_news/models/category_models.dart';
+import 'package:indestak_news/views/article_view.dart';
 import 'package:indestak_news/views/category_news.dart';
 import 'package:intl/intl.dart';
 import 'package:get/get.dart';
@@ -64,6 +65,7 @@ class _HomeState extends State<Home> {
     localizacao = appLocale;
 
     return Scaffold(
+
       appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -122,7 +124,8 @@ class _HomeState extends State<Home> {
                            return BlogTile(
                                imageUrl: articles[index].urlToImage,
                                title: articles[index].title,
-                               description: articles[index].description
+                               description: articles[index].description,
+                               url: articles[index].url,
                            );
                          }),
                    ),
@@ -140,10 +143,10 @@ class _HomeState extends State<Home> {
 
 class CategoryTile extends StatelessWidget {
 
-  final imageUrl, categoryName;
+  final String  imageUrl, categoryName;
   CategoryTile({
-    this.imageUrl,
-    this.categoryName
+    required this.imageUrl,
+    required this.categoryName
   });
 
 
@@ -151,7 +154,12 @@ class CategoryTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        
+        Navigator.push(context, MaterialPageRoute(
+            builder: (context) => CategoryNews(
+                categoryName.toLowerCase(),
+             )
+           )
+        );
       },
       child: Container(
         margin: EdgeInsets.only(right: 16),
@@ -173,6 +181,7 @@ class CategoryTile extends StatelessWidget {
 
                 child:  Text(categoryName, style: TextStyle(
                     color: Colors.white,
+
                   fontSize: 14,
                   fontWeight: FontWeight.w500
                   ),
@@ -191,39 +200,50 @@ class CategoryTile extends StatelessWidget {
 
 // Bloco dos de notícias
 class BlogTile extends StatelessWidget {
-  final String imageUrl, title, description;
+  final String imageUrl, title, description,url;
 
    BlogTile({ required this.imageUrl,
               required this.title,
-              required this.description
+              required this.description,
+              required this.url
 
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(bottom: 16),
-      child: Column(
-        children: [
-          ClipRRect(
-              borderRadius: BorderRadius.circular(6), 
-              child: Image.network(imageUrl)
+    return GestureDetector(
+      onTap: (){
+        Navigator.push(context, MaterialPageRoute(
+            builder: (context) =>  ArticleView(
+                blogUrl: url,
+            )
+          )
+        );
+      },
+      child: Container(
+        margin: EdgeInsets.only(bottom: 16),
+        child: Column(
+          children: [
+            ClipRRect(
+                borderRadius: BorderRadius.circular(6),
+                child: Image.network(imageUrl)
+            ),
+            SizedBox(height: 8,) ,
+            Text(title, style: TextStyle(
+              fontSize: 18,
+              color: Colors.black87,
+              fontWeight: FontWeight.w500
+            )
           ),
-          SizedBox(height: 8,) ,
-          Text(title, style: TextStyle(
-            fontSize: 18,
-            color: Colors.black87,
-            fontWeight: FontWeight.w500
-          )
-        ),
-          SizedBox(height: 8,) ,
-          Text(description,
-                style: TextStyle(
-                  color: Colors.black54
+            SizedBox(height: 8,) ,
+            Text(description,
+                  style: TextStyle(
+                    color: Colors.black54
 
-                ),
-          )
-        ],
+                  ),
+            )
+          ],
+        ),
       ),
     );
   }
