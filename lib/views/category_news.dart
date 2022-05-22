@@ -27,9 +27,10 @@ class _CategoryNewsState extends State<CategoryNews> {
     articles = newsRec.news;
 
     if(newsRec.news.isEmpty ){
-    //  newsRec = News(key: "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD");
+      //newsRec = News(key: "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD");
       await newsRec.getNews(widget.category);
       articles = newsRec.news;
+
     }
     setState(() {
       _loading = false;

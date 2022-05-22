@@ -9,6 +9,8 @@ import 'package:indestak_news/views/article_view.dart';
 import 'package:indestak_news/views/category_news.dart';
 import 'package:intl/intl.dart';
 import 'package:get/get.dart';
+import 'dart:io' as Plataforma;
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 
 class Home extends StatefulWidget {
@@ -16,16 +18,26 @@ class Home extends StatefulWidget {
 
 
 
+
+
+
   @override
   State<Home> createState() => _HomeState();
+
 }
 
 class _HomeState extends State<Home> {
 
   List <CategoryModel> categorias = [];
   List<ArticleModel> articles = [];
-  bool _loading = true;
+  bool _loading = false;
+  bool _isAdLoaded = false;
   String localizacao = '';
+  late InterstitialAd _interstitialAd;
+  String appLocale = Plataforma.Platform.localeName;
+
+
+
 
 
   @override
@@ -35,16 +47,50 @@ class _HomeState extends State<Home> {
     categorias = getCategories();
     getNews();
 
+    // test ca-app-pub-3940256099942544/1033173712
+    //produção ca-app-pub-3227466956262743/7149016029
+    //produção IOS ca-app-pub-3227466956262743/4290670974
+
+    InterstitialAd.load(
+        adUnitId: Plataforma.Platform.isAndroid ? "ca-app-pub-3940256099942544/1033173712" : "ca-app-pub-3227466956262743/4290670974",
+        request: AdRequest(),
+        adLoadCallback: InterstitialAdLoadCallback(
+          onAdLoaded: (ad){
+            setState(() {
+                _isAdLoaded = true;
+                this._interstitialAd = ad;
+            });
+            print('InterstitialAd  load:');
+          },
+          onAdFailedToLoad: (error){
+            print('InterstitialAd failed to load: $error');
+          },
+        )
+    );
+
+
+
+
   }
 
   getNews() async{
-    News newsRec = News();
+    String key = appLocale.contains("pt") ?
+    "https://newsapi.org/v2/top-headlines?country=br&apiKey=1bc7955b268d4676be11952421184021" :
+    "https://newsapi.org/v2/top-headlines?country=us&apiKey=1bc7955b268d4676be11952421184021";
+
+    News newsRec = News(key: key);
     await newsRec.getNews();
     articles = newsRec.news;
 
     if(newsRec.news.isEmpty ){
 
-      newsRec = News(key: "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD");
+      if(appLocale.contains("pt") ){
+        newsRec = News(key: "https://api.thenewsapi.com/v1/news/all?locale=pt&language=pt&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD");
+      }
+      else{
+        newsRec = News(key: "https://api.thenewsapi.com/v1/news/all?locale=us&language=en&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD");
+      }
+
       await newsRec.getNews();
       articles = newsRec.news;
     }
@@ -60,9 +106,13 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
 
-    String appLocale = Intl.getCurrentLocale().toString();
+    String appLocale = Plataforma.Platform.localeName;
     print("Local do App: $appLocale");
     localizacao = appLocale;
+    if(_isAdLoaded){
+      _interstitialAd!.show();
+    }
+
 
     return Scaffold(
 
@@ -134,11 +184,14 @@ class _HomeState extends State<Home> {
               ),
             ),
       ),
+
      
       );
 
 
   }
+
+
 }
 
 class CategoryTile extends StatelessWidget {
