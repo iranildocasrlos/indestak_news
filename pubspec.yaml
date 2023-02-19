@@ -1,5 +1,5 @@
 name: indestak_news
-description: A new Flutter project.
+description: Desenvolvido por LocalOeste Software House.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -15,7 +15,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.4+5
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
@@ -37,17 +37,25 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   webview_flutter: ^3.0.1
+  flutter_macos_webview: ^0.0.6
   cached_network_image: ^3.2.0
   google_mobile_ads: ^1.2.0
   http: ^0.13.4
   intl: ^0.17.0
   get: ^4.6.1
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: ^0.9.2
 
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "dev_assets/ic_launcher.png"
+  adaptive_icon_background: "#00008B"
+  adaptive_icon_foreground: "dev_assets/ic_launcher_foreground.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -56,12 +64,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
 
-flutter_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/icon/ic_launcher/android/mipmap-hdpi/ic_launcher.png"
-  adaptive_icon_background: "#FFA500"
-  adaptive_icon_foreground: "assets/icon/ic_launcher/android/mipmap-hdpi/ic_launcher_foreground.png"
+
 
 
 # For information on the generic Dart part of this file, see the
@@ -88,6 +91,9 @@ assets:
      - images/bike.jpeg
      - images/meeting.jpeg
      - images/netflix.jpeg
+     - images/ic_launcher.png
+     - images/ic_launcher_foreground.png
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

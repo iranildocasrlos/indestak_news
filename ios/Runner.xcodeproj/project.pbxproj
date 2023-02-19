@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		3E70260428D2CE3E007664E8 /* IndestakNewsMacOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70260328D2CE3E007664E8 /* IndestakNewsMacOsApp.swift */; };
+		3E70260628D2CE3E007664E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70260528D2CE3E007664E8 /* ContentView.swift */; };
+		3E70260828D2CE40007664E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E70260728D2CE40007664E8 /* Assets.xcassets */; };
+		3E70260B28D2CE40007664E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E70260A28D2CE40007664E8 /* Preview Assets.xcassets */; };
+		3E70261628D2CE44007664E8 /* IndestakNewsMacOsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70261528D2CE44007664E8 /* IndestakNewsMacOsTests.swift */; };
+		3E70262028D2CE46007664E8 /* IndestakNewsMacOsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70261F28D2CE46007664E8 /* IndestakNewsMacOsUITests.swift */; };
+		3E70262228D2CE46007664E8 /* IndestakNewsMacOsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70262128D2CE46007664E8 /* IndestakNewsMacOsUITestsLaunchTests.swift */; };
 		3E8C2B5C28356C0B000E55B3 /* indestak_newsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C2B5B28356C0B000E55B3 /* indestak_newsTests.swift */; };
 		58D493B2812FE6BD9F302BF4 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B126152CF9791BCAA7F0A08B /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
@@ -18,6 +25,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E70261228D2CE42007664E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E70260028D2CE3D007664E8;
+			remoteInfo = IndestakNewsMacOs;
+		};
+		3E70261C28D2CE45007664E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E70260028D2CE3D007664E8;
+			remoteInfo = IndestakNewsMacOs;
+		};
 		3E8C2B5D28356C0B000E55B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
@@ -44,6 +65,17 @@
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		3E70260128D2CE3D007664E8 /* IndestakNewsMacOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndestakNewsMacOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E70260328D2CE3E007664E8 /* IndestakNewsMacOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndestakNewsMacOsApp.swift; sourceTree = "<group>"; };
+		3E70260528D2CE3E007664E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E70260728D2CE40007664E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E70260A28D2CE40007664E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E70260C28D2CE40007664E8 /* IndestakNewsMacOs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IndestakNewsMacOs.entitlements; sourceTree = "<group>"; };
+		3E70261128D2CE41007664E8 /* IndestakNewsMacOsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndestakNewsMacOsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E70261528D2CE44007664E8 /* IndestakNewsMacOsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndestakNewsMacOsTests.swift; sourceTree = "<group>"; };
+		3E70261B28D2CE44007664E8 /* IndestakNewsMacOsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndestakNewsMacOsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E70261F28D2CE46007664E8 /* IndestakNewsMacOsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndestakNewsMacOsUITests.swift; sourceTree = "<group>"; };
+		3E70262128D2CE46007664E8 /* IndestakNewsMacOsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndestakNewsMacOsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3E8C2B5928356C0B000E55B3 /* indestak_newsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = indestak_newsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8C2B5B28356C0B000E55B3 /* indestak_newsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indestak_newsTests.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -63,6 +95,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3E7025FE28D2CE3D007664E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E70260E28D2CE41007664E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E70261828D2CE44007664E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E8C2B5628356C0B000E55B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,6 +140,43 @@
 				B126152CF9791BCAA7F0A08B /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E70260228D2CE3E007664E8 /* IndestakNewsMacOs */ = {
+			isa = PBXGroup;
+			children = (
+				3E70260328D2CE3E007664E8 /* IndestakNewsMacOsApp.swift */,
+				3E70260528D2CE3E007664E8 /* ContentView.swift */,
+				3E70260728D2CE40007664E8 /* Assets.xcassets */,
+				3E70260C28D2CE40007664E8 /* IndestakNewsMacOs.entitlements */,
+				3E70260928D2CE40007664E8 /* Preview Content */,
+			);
+			path = IndestakNewsMacOs;
+			sourceTree = "<group>";
+		};
+		3E70260928D2CE40007664E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E70260A28D2CE40007664E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E70261428D2CE44007664E8 /* IndestakNewsMacOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E70261528D2CE44007664E8 /* IndestakNewsMacOsTests.swift */,
+			);
+			path = IndestakNewsMacOsTests;
+			sourceTree = "<group>";
+		};
+		3E70261E28D2CE46007664E8 /* IndestakNewsMacOsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E70261F28D2CE46007664E8 /* IndestakNewsMacOsUITests.swift */,
+				3E70262128D2CE46007664E8 /* IndestakNewsMacOsUITestsLaunchTests.swift */,
+			);
+			path = IndestakNewsMacOsUITests;
 			sourceTree = "<group>";
 		};
 		3E8C2B5A28356C0B000E55B3 /* indestak_newsTests */ = {
@@ -114,6 +204,9 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				3E8C2B5A28356C0B000E55B3 /* indestak_newsTests */,
+				3E70260228D2CE3E007664E8 /* IndestakNewsMacOs */,
+				3E70261428D2CE44007664E8 /* IndestakNewsMacOsTests */,
+				3E70261E28D2CE46007664E8 /* IndestakNewsMacOsUITests */,
 				97C146EF1CF9000F007C117D /* Products */,
 				A2D540979A8DAF5CA3D49FE9 /* Pods */,
 				05B2C0C8A598F58F1F52094C /* Frameworks */,
@@ -125,6 +218,9 @@
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				3E8C2B5928356C0B000E55B3 /* indestak_newsTests.xctest */,
+				3E70260128D2CE3D007664E8 /* IndestakNewsMacOs.app */,
+				3E70261128D2CE41007664E8 /* IndestakNewsMacOsTests.xctest */,
+				3E70261B28D2CE44007664E8 /* IndestakNewsMacOsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +253,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3E70260028D2CE3D007664E8 /* IndestakNewsMacOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E70262328D2CE46007664E8 /* Build configuration list for PBXNativeTarget "IndestakNewsMacOs" */;
+			buildPhases = (
+				3E7025FD28D2CE3D007664E8 /* Sources */,
+				3E7025FE28D2CE3D007664E8 /* Frameworks */,
+				3E7025FF28D2CE3D007664E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndestakNewsMacOs;
+			productName = IndestakNewsMacOs;
+			productReference = 3E70260128D2CE3D007664E8 /* IndestakNewsMacOs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E70261028D2CE41007664E8 /* IndestakNewsMacOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E70262728D2CE46007664E8 /* Build configuration list for PBXNativeTarget "IndestakNewsMacOsTests" */;
+			buildPhases = (
+				3E70260D28D2CE41007664E8 /* Sources */,
+				3E70260E28D2CE41007664E8 /* Frameworks */,
+				3E70260F28D2CE41007664E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E70261328D2CE42007664E8 /* PBXTargetDependency */,
+			);
+			name = IndestakNewsMacOsTests;
+			productName = IndestakNewsMacOsTests;
+			productReference = 3E70261128D2CE41007664E8 /* IndestakNewsMacOsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E70261A28D2CE44007664E8 /* IndestakNewsMacOsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E70262B28D2CE46007664E8 /* Build configuration list for PBXNativeTarget "IndestakNewsMacOsUITests" */;
+			buildPhases = (
+				3E70261728D2CE44007664E8 /* Sources */,
+				3E70261828D2CE44007664E8 /* Frameworks */,
+				3E70261928D2CE44007664E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E70261D28D2CE45007664E8 /* PBXTargetDependency */,
+			);
+			name = IndestakNewsMacOsUITests;
+			productName = IndestakNewsMacOsUITests;
+			productReference = 3E70261B28D2CE44007664E8 /* IndestakNewsMacOsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		3E8C2B5828356C0B000E55B3 /* indestak_newsTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E8C2B5F28356C0B000E55B3 /* Build configuration list for PBXNativeTarget "indestak_newsTests" */;
@@ -203,10 +352,21 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					3E70260028D2CE3D007664E8 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					3E70261028D2CE41007664E8 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 3E70260028D2CE3D007664E8;
+					};
+					3E70261A28D2CE44007664E8 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 3E70260028D2CE3D007664E8;
+					};
 					3E8C2B5828356C0B000E55B3 = {
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = 97C146ED1CF9000F007C117D;
@@ -232,11 +392,37 @@
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
 				3E8C2B5828356C0B000E55B3 /* indestak_newsTests */,
+				3E70260028D2CE3D007664E8 /* IndestakNewsMacOs */,
+				3E70261028D2CE41007664E8 /* IndestakNewsMacOsTests */,
+				3E70261A28D2CE44007664E8 /* IndestakNewsMacOsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3E7025FF28D2CE3D007664E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E70260B28D2CE40007664E8 /* Preview Assets.xcassets in Resources */,
+				3E70260828D2CE40007664E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E70260F28D2CE41007664E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E70261928D2CE44007664E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E8C2B5728356C0B000E55B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +514,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3E7025FD28D2CE3D007664E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E70260628D2CE3E007664E8 /* ContentView.swift in Sources */,
+				3E70260428D2CE3E007664E8 /* IndestakNewsMacOsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E70260D28D2CE41007664E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E70261628D2CE44007664E8 /* IndestakNewsMacOsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E70261728D2CE44007664E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E70262228D2CE46007664E8 /* IndestakNewsMacOsUITestsLaunchTests.swift in Sources */,
+				3E70262028D2CE46007664E8 /* IndestakNewsMacOsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E8C2B5528356C0B000E55B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +560,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3E70261328D2CE42007664E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E70260028D2CE3D007664E8 /* IndestakNewsMacOs */;
+			targetProxy = 3E70261228D2CE42007664E8 /* PBXContainerItemProxy */;
+		};
+		3E70261D28D2CE45007664E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E70260028D2CE3D007664E8 /* IndestakNewsMacOs */;
+			targetProxy = 3E70261C28D2CE45007664E8 /* PBXContainerItemProxy */;
+		};
 		3E8C2B5E28356C0B000E55B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 97C146ED1CF9000F007C117D /* Runner */;
@@ -429,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -439,11 +662,296 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.indestakNews;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.indestaknews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Profile;
+		};
+		3E70262428D2CE46007664E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = IndestakNewsMacOs/IndestakNewsMacOs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IndestakNewsMacOs/Preview Content\"";
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3E70262528D2CE46007664E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = IndestakNewsMacOs/IndestakNewsMacOs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IndestakNewsMacOs/Preview Content\"";
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3E70262628D2CE46007664E8 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = IndestakNewsMacOs/IndestakNewsMacOs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IndestakNewsMacOs/Preview Content\"";
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Profile;
+		};
+		3E70262828D2CE46007664E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndestakNewsMacOs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IndestakNewsMacOs";
+			};
+			name = Debug;
+		};
+		3E70262928D2CE46007664E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndestakNewsMacOs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IndestakNewsMacOs";
+			};
+			name = Release;
+		};
+		3E70262A28D2CE46007664E8 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndestakNewsMacOs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IndestakNewsMacOs";
+			};
+			name = Profile;
+		};
+		3E70262C28D2CE46007664E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = IndestakNewsMacOs;
+			};
+			name = Debug;
+		};
+		3E70262D28D2CE46007664E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = IndestakNewsMacOs;
+			};
+			name = Release;
+		};
+		3E70262E28D2CE46007664E8 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUNPWY7925;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.IndestakNewsMacOsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = IndestakNewsMacOs;
 			};
 			name = Profile;
 		};
@@ -642,6 +1150,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -652,7 +1161,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.indestakNews;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.indestaknews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -665,6 +1174,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -675,7 +1185,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.indestakNews;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.localoeste.indestaknews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -686,6 +1196,36 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3E70262328D2CE46007664E8 /* Build configuration list for PBXNativeTarget "IndestakNewsMacOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E70262428D2CE46007664E8 /* Debug */,
+				3E70262528D2CE46007664E8 /* Release */,
+				3E70262628D2CE46007664E8 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E70262728D2CE46007664E8 /* Build configuration list for PBXNativeTarget "IndestakNewsMacOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E70262828D2CE46007664E8 /* Debug */,
+				3E70262928D2CE46007664E8 /* Release */,
+				3E70262A28D2CE46007664E8 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E70262B28D2CE46007664E8 /* Build configuration list for PBXNativeTarget "IndestakNewsMacOsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E70262C28D2CE46007664E8 /* Debug */,
+				3E70262D28D2CE46007664E8 /* Release */,
+				3E70262E28D2CE46007664E8 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3E8C2B5F28356C0B000E55B3 /* Build configuration list for PBXNativeTarget "indestak_newsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

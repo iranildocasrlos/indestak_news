@@ -1,16 +1,16 @@
 import 'dart:convert';
 import '../models/articleModel.dart';
-import '../helper/data.dart';
+import '../helper/data_web.dart';
 import 'package:http/http.dart' as http;
-import 'dart:io' as Plataforma;
 
-class News {
+
+class NewsWeb {
   List<ArticleModel> news = [];
   final String key;
 
 
-  News(
-  {required this.key}
+  NewsWeb(
+      {required this.key}
       );
 
   Future<void> getNews() async{
@@ -143,48 +143,17 @@ class News {
 
 class CategoryNewsClass {
   List<ArticleModel> news = [];
-  String appLocale = Plataforma.Platform.localeName;
+
 
   Future<void> getNews(String category) async{
     String key ="";
-    if(appLocale == "pt_BR") {
-      switch (category){
-        case "entreterimento":
-          category = "entertainment";
-          break;
 
-        case "saúde":
-          category = "health";
-          break;
-
-        case "negócios":
-          category = "business";
-          break;
-
-        case "ciências":
-          category = "science";
-          break;
-
-        case "esportes":
-          category = "sports";
-          break;
-
-        case "tecnologia":
-          category = "technology";
-          break;
-      }
-      key = "https://newsapi.org/v2/top-headlines?category=$category&country=br&apiKey=1bc7955b268d4676be11952421184021";
-      if (category == "politics") {
-        key =
-        "https://api.thenewsapi.com/v1/news/all?locale=br&language=pt&categories=politics&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD";
-      }
-    } else if (appLocale == "en_US") {
       key = "https://newsapi.org/v2/top-headlines?category=$category&country=us&apiKey=1bc7955b268d4676be11952421184021";
       if (category == "politics") {
         key =
         "https://api.thenewsapi.com/v1/news/all?locale=us&language=en&categories=politics&api_token=2nQgAGaAIJXJSbqBbxKQO7hv9JWnlqdCGiunv5lD";
       }
-    }
+
 
     String url = getApiKey(key);
     var response = await http.get(Uri.parse(url));
@@ -253,51 +222,51 @@ class CategoryNewsClass {
       if (jsonData["data"] != null) {
         jsonData["data"].forEach((element) {
 
-              if (element["author"] != null) {
-                author = element["author"];
-              } else {
-                author = "TheNewsAPI";
-              }
-              if (element["title"] != null) {
-                title = element["title"];
-              } else {
-                title = "News Indestak";
-              }
-              if (element["description"] != null) {
-                desc = element["description"];
-              } else {
-                desc = "News Indestak";
-              }
-              if (element["url"] != null) {
-                urlString = element["url"];
-              } else {
-                urlString = "";
-              }
-              if (element["image_url"] != null) {
-                url_to_image = element["image_url"];
-              } else {
-                url_to_image = "";
-              }
-              if (element["snippet"] != null) {
-                content = element["snippet"];
-              } else {
-                content = "";
-              }
+          if (element["author"] != null) {
+            author = element["author"];
+          } else {
+            author = "TheNewsAPI";
+          }
+          if (element["title"] != null) {
+            title = element["title"];
+          } else {
+            title = "News Indestak";
+          }
+          if (element["description"] != null) {
+            desc = element["description"];
+          } else {
+            desc = "News Indestak";
+          }
+          if (element["url"] != null) {
+            urlString = element["url"];
+          } else {
+            urlString = "";
+          }
+          if (element["image_url"] != null) {
+            url_to_image = element["image_url"];
+          } else {
+            url_to_image = "";
+          }
+          if (element["snippet"] != null) {
+            content = element["snippet"];
+          } else {
+            content = "";
+          }
 
 
-              if (element["image_url"] != null) {
-                ArticleModel article = ArticleModel(
-                    author: author,
-                    title: title,
-                    description: desc,
-                    url: urlString,
-                    urlToImage: url_to_image,
-                    content: content
-                );
-                if (element["description"] != null) {
-                  news.add(article);
-                }
-              }
+          if (element["image_url"] != null) {
+            ArticleModel article = ArticleModel(
+                author: author,
+                title: title,
+                description: desc,
+                url: urlString,
+                urlToImage: url_to_image,
+                content: content
+            );
+            if (element["description"] != null) {
+              news.add(article);
+            }
+          }
 
         });
       }

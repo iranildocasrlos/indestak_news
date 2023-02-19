@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:indestak_news/views/home.dart';
 
-void main() {
+void main() async{
+
   runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     MaterialColor colorSeed = Colors.deepPurple;
-    ValueNotifier<bool>materialNofier = ValueNotifier(false);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Indestak News',

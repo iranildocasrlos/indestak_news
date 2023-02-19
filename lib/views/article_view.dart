@@ -22,6 +22,9 @@ class _ArticleViewState extends State<ArticleView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.black
+        ),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -39,13 +42,16 @@ class _ArticleViewState extends State<ArticleView> {
         centerTitle: true,
         backgroundColor: Colors.white,
 
+
         actions: [
+
           Opacity(opacity: 0,
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Icon(Icons.save)
+              child: Icon(Icons.save, color: Colors.black,)
             ),
-          )
+          ),
+
         ],
 
       ),

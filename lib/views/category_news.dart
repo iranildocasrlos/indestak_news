@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-
 import '../helper/news.dart';
 import '../models/articleModel.dart';
 import '../models/category_models.dart';
 import 'article_view.dart';
-import 'home.dart';
+
 
 class CategoryNews extends StatefulWidget {
   final String category;
@@ -43,6 +42,7 @@ class _CategoryNewsState extends State<CategoryNews> {
     // TODO: implement initState
     super.initState();
     getCategoryNews();
+    print("Chamou category_news");
   }
 
   @override
@@ -65,14 +65,18 @@ class _CategoryNewsState extends State<CategoryNews> {
         elevation: 0.0,
         centerTitle: true,
         backgroundColor: Colors.white,
+        iconTheme: IconThemeData(
+          color: Colors.black),
 
         actions: [
           Opacity(opacity: 0,
             child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Icon(Icons.save)
+                child: Icon(Icons.save),
+
             ),
-          )
+          ),
+
         ],
 
       ),
@@ -81,9 +85,7 @@ class _CategoryNewsState extends State<CategoryNews> {
           child: CircularProgressIndicator(),
         ),
       ) :  SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.only(top: 16),
-          child: ListView.builder(
+        child: ListView.builder(
               itemCount: articles.length ,
               shrinkWrap: true,
               physics: ClampingScrollPhysics(),
@@ -96,7 +98,7 @@ class _CategoryNewsState extends State<CategoryNews> {
                   url: articles[index].url,
                 );
               }),
-        ),
+
       ),
 
     );
