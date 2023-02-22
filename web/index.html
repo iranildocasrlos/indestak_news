@@ -32,7 +32,36 @@
   <title>indestak_news</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
+
 <body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD8Z4gjYC7CGM6WiBQIgxqyqC4TTIxBdxs",
+    authDomain: "indestaknews.firebaseapp.com",
+    projectId: "indestaknews",
+    storageBucket: "indestaknews.appspot.com",
+    messagingSenderId: "857843654223",
+    appId: "1:857843654223:web:64d0e27eb7f82c7a23d43a",
+    measurementId: "G-1Q45NYTG04"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->

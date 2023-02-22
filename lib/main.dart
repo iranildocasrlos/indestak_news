@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:indestak_news/views/home.dart';
 
+
 void main() async{
 
   runApp(const MyApp());
